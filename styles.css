@@ -32,4 +32,81 @@ body {
     padding: 16px;
     min-height: 100svh;
     background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+}
+h1, p {
+    margin-top: 0;
+}
+.cardComponent {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    max-width: 600px;
+    overflow: hidden;
+}
+.leftSide {
+    flex-basis: 50%;
+}
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    flex-basis: 50%;
+    gap: 20px;
+}
+.category {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: var(--grayishBlue);
+    letter-spacing: .3rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.description {
+    color: var(--grayishBlue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.priceComponent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.promoPrice {
+    color: var(--darkCyan);
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+}
+.regularPrice {
+    
+}
+.addToCart {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: var(--darkCyan);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.addToCart:hover {
+    background-color: var(--darkBlue);
 }
